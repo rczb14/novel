@@ -1,0 +1,29 @@
+globalConfig:
+  author: kyc
+  open: false
+  dateType: ONLY_DATE
+  outputDir: src\main\java
+dataSourceConfig:
+  url: jdbc:mysql://localhost:3306/novel_context?useUnicode=true&useSSL=false&characterEncoding=utf8
+  username: root
+  password: 20150262
+packageConfig:
+  parent: com.kyc.novel.context
+  entity: entity
+  service: service
+  serviceImpl: service.impl
+  mapper: mapper
+  xml: mapper.xml
+  controller: controller
+  pathInfo:
+    entity: src\main\java\com\kyc\novel\context\entity
+    service: src\main\java\com\kyc\novel\context\service
+    serviceImpl: src\main\java\com\kyc\novel\context\service\impl
+    mapper: src\main\java\com\kyc\novel\context\mapper
+    xml: src\main\java\com\kyc\novel\context\mapper\xml
+    controller: src\main\java\com\kyc\novel\context\controller
+strategyConfig:
+  tablePrefix:
+  include:
+    #- novel_info
+    #- novel_classify

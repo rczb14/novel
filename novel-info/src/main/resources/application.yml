@@ -1,0 +1,14 @@
+server:
+  port: 10000
+
+mybatis-plus:
+  mapper-locations:
+    - classpath*:com.kyc.novel.context.mapper.xml
+spring:
+  profiles:
+    active: database
+
+minio:
+  endpoint: "http://localhost:9000"
+  accessKey: "XeKbuc8cRuqzF2jnBao7"
+  secretKey: "PxHnjvp4rqMLAFunZ6c23XemDJZgedDkBPBrGYOT"
